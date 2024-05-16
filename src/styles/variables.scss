@@ -1,0 +1,45 @@
+html {
+  font-size: 10px;
+}
+
+@media screen and (width >= 321px) and (width <= 375px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (width >= 376px) and (width <= 414px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (width >= 415px) and (width <= 639px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (width >= 640px) and (width <= 719px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (width >= 720px) and (width <= 749px) {
+  html {
+    font-size: 22.5px;
+  }
+}
+
+@media screen and (width >= 750px) and (width <= 799px) {
+  html {
+    font-size: 23.5px;
+  }
+}
+
+@media screen and (width >= 800px) {
+  html {
+    font-size: 25px;
+  }
+}
