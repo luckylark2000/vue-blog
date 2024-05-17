@@ -1,13 +1,16 @@
 <script setup>
 import { DocumentTextOutline } from '@vicons/ionicons5';
+import BlogCard from './BlogCard.vue';
 </script>
 <template>
   <div class="home-container">
     <div class="blogs">
       <div class="blogs-header">全部博客</div>
-      <div class="bolg-content">neirong</div>
+      <span class="blog-content">
+        <BlogCard v-for="i in 3" :key="i" />
+      </span>
     </div>
-    <div class="sider">
+    <div class="side">
       <div class="category">
         <div class="c-header">分类</div>
         <div class="c-list">
@@ -45,24 +48,33 @@ import { DocumentTextOutline } from '@vicons/ionicons5';
 }
 
 .blogs {
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
   flex: 3;
-  margin-inline: 10px;
+  padding-inline: 10px;
   min-height: 300px;
+
+  .blog-content :first-child {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .blog-content > :not(:first-child) {
+    border-radius: 5px;
+  }
 }
 
 .blogs-header {
-  padding-bottom: 5px;
+  padding: 10px 10px 5px;
   font-size: 20px;
   font-weight: bold;
   text-align: start;
+  background-color: rgb(255 255 255 / 70%);
+  border-radius: 5px 5px 0 0;
   border-bottom: 1px solid rgb(0 0 0 / 20%);
 }
 
-.sider {
+.side {
   margin-right: 10px;
   border-radius: 5px;
   flex: 1;
@@ -154,7 +166,7 @@ import { DocumentTextOutline } from '@vicons/ionicons5';
 }
 
 @media screen and (width <= 415px) {
-  .sider {
+  .side {
     display: none;
   }
 }
