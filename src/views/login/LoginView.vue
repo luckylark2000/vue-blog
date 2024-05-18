@@ -68,7 +68,7 @@ const handleForgotPassword = () => {
 .login-container {
   display: flex;
   height: 100vh;
-  background-image: url('../../assets/images/backgroung.png');
+  background-image: url('../../assets/images/background.png');
   background-repeat: no-repeat; /* 确保图片不重复 */
   background-size: cover;
   align-items: center;

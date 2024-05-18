@@ -27,7 +27,6 @@
       <n-list>
         <n-list-item v-for="(msg, index) in messages" :key="index">
           <n-space align="start">
-            <!-- <n-icon icon="ion:chatbubble-ellipses-outline" class="bubble-icon" /> -->
             <n-icon><ChatbubbleEllipsesOutline /></n-icon>
             <div class="bubble">{{ msg }}</div>
           </n-space>
